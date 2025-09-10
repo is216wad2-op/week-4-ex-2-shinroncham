@@ -11,6 +11,13 @@
 
         /* add CSS code here */
 
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            border-radius: 50%;
+        }
+
     </style>
 
     
@@ -26,6 +33,17 @@
     <script>
         
        // add code here
+       function changeShape() {
+            var ele_value = document.getElementsByTagName("div")[0];
+            var curr_id = ele_value.id;
+            if (curr_id == "div1") {
+                ele_value.id = "div2";
+            }
+            else {
+                ele_value.id = "div1"
+            }
+
+       }
 
     </script>
 
